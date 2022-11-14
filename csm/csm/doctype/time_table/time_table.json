@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-23 15:16:58.871962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject_class",
+  "start_period",
+  "end_period",
+  "room_id",
+  "day"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject_class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "L\u1edbp m\u00f4n h\u1ecdc",
+   "options": "Subject Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ti\u1ebft b\u1eaft \u0111\u1ea7u",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_period",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ti\u1ebft k\u1ebft th\u00fac",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gi\u1ea3ng \u0111\u01b0\u1eddng",
+   "options": "Room",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Th\u1ee9 trong tu\u1ea7n",
+   "options": "Th\u1ee9 Hai\nTh\u1ee9 Ba\nTh\u1ee9 T\u01b0\nTh\u1ee9 N\u0103m\nTh\u1ee9 S\u00e1u\nTh\u1ee9 B\u1ea3y\nCh\u1ee7 Nh\u1eadt",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-29 23:29:37.629333",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Time Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

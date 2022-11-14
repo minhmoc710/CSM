@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-01 00:46:48.901448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_name",
+  "abbr",
+  "description",
+  "contact_section",
+  "phone_number",
+  "website",
+  "address",
+  "fax",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean c\u00f4ng ty/t\u1ed5 ch\u1ee9c",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "label": "T\u00ean vi\u1ebft t\u1eaft"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Th\u00f4ng tin li\u00ean l\u1ea1c"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Data",
+   "label": "Fax"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-10 00:03:16.772103",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Organization",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

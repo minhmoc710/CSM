@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-10-03 12:38:07.575535",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "degree",
+  "academic_rank",
+  "major",
+  "specialization",
+  "start_date",
+  "end_date",
+  "study_place"
+ ],
+ "fields": [
+  {
+   "fieldname": "degree",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "B\u1eb1ng",
+   "options": "C\u1eed nh\u00e2n\nTh\u1ea1c s\u0129\nTi\u1ebfn s\u0129\nTi\u1ebfn s\u0129 khoa h\u1ecdc",
+   "reqd": 1
+  },
+  {
+   "default": "Kh\u00f4ng",
+   "fieldname": "academic_rank",
+   "fieldtype": "Select",
+   "label": "H\u1ecdc h\u00e0m",
+   "options": "Kh\u00f4ng\nGi\u00e1o s\u01b0\nPh\u00f3 gi\u00e1o s\u01b0"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u00e0nh",
+   "options": "Major",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Chuy\u00ean ng\u00e0nh",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian b\u1eaft \u0111\u1ea7u"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian k\u1ebft th\u00fac"
+  },
+  {
+   "fieldname": "study_place",
+   "fieldtype": "Data",
+   "label": "N\u01a1i \u0111\u00e0o t\u1ea1o"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-11 21:02:02.481885",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Academic History",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

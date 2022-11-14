@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:class_code",
+ "creation": "2022-10-03 23:34:54.219244",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_code",
+  "class_name",
+  "subject",
+  "start_date",
+  "end_date",
+  "semester",
+  "class_participant",
+  "references"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean l\u1edbp h\u1ecdc",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "label": "M\u00f4n h\u1ecdc",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y b\u1eaft \u0111\u1ea7u"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y k\u1ebft th\u00fac"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "label": "K\u00ec h\u1ecdc",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "class_participant",
+   "fieldtype": "Table",
+   "label": "Ng\u01b0\u1eddi tham gia",
+   "options": "Class Participant"
+  },
+  {
+   "fieldname": "class_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M\u00e3 l\u1edbp",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "references",
+   "fieldtype": "Table",
+   "label": "T\u00e0i li\u1ec7u tham kh\u1ea3o",
+   "options": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-29 23:34:50.493544",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Subject Class",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

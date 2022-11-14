@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-11-09 22:48:58.571481",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-11-09 22:48:58.571481",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "\u0110\u1ec1 t\u00e0i nghi\u00ean c\u1ee9u khoa h\u1ecdc",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Scientific Research Subject",
+ "report_name": "\u0110\u1ec1 t\u00e0i nghi\u00ean c\u1ee9u khoa h\u1ecdc",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:collective_name",
+ "creation": "2022-10-11 23:48:45.957451",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "collective_name",
+  "description",
+  "2_col",
+  "phone_number",
+  "email",
+  "website",
+  "section",
+  "members"
+ ],
+ "fields": [
+  {
+   "fieldname": "collective_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean t\u1eadp th\u1ec3",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "2_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Th\u00e0nh vi\u00ean",
+   "options": "Collective Member",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-10 21:52:52.639052",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Collective",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

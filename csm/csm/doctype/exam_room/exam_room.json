@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-05 12:30:43.788702",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exam",
+  "room_id",
+  "room_name",
+  "room_code",
+  "semester_id",
+  "start_time",
+  "end_time",
+  "invigilator",
+  "participant"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean ph\u00f2ng"
+  },
+  {
+   "fieldname": "room_code",
+   "fieldtype": "Data",
+   "label": "M\u00e3 ph\u00f2ng"
+  },
+  {
+   "fieldname": "exam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "K\u00ec thi",
+   "options": "Exam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Th\u1eddi gian b\u1eaft \u0111\u1ea7u"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "Th\u1eddi gian k\u1ebft th\u00fac"
+  },
+  {
+   "fieldname": "room_id",
+   "fieldtype": "Link",
+   "label": "Ph\u00f2ng thi",
+   "options": "Room",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invigilator",
+   "fieldtype": "Table",
+   "label": "Gi\u00e1m th\u1ecb",
+   "options": "Exam Invigilator"
+  },
+  {
+   "fieldname": "participant",
+   "fieldtype": "Table",
+   "label": "Ng\u01b0\u1eddi thi",
+   "options": "Exam Participant"
+  },
+  {
+   "fieldname": "semester_id",
+   "fieldtype": "Link",
+   "label": "K\u00ec h\u1ecdc",
+   "options": "Semester",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-07 23:30:24.558129",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Exam Room",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

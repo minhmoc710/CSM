@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2022-10-11 21:42:45.388138",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "description",
+  "authors",
+  "publication_type",
+  "publisher",
+  "publication_place",
+  "publish_date",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0110\u1ec1 t\u00e0i",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "C\u00e1c t\u00e1c gi\u1ea3",
+   "options": "Contributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "publication_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Lo\u1ea1i c\u00f4ng b\u1ed1",
+   "options": "B\u00e0i b\u00e1o khoa h\u1ecdc\nS\u00e1ch chuy\u00ean kh\u1ea3o\nS\u00e1ch gi\u00e1o tr\u00ecnh\nS\u00e1ch tham kh\u1ea3o\nS\u00e1ch h\u01b0\u1edbng d\u1eabn\nKh\u00e1c",
+   "reqd": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "\u0110\u01a1n v\u1ecb xu\u1ea5t b\u1ea3n"
+  },
+  {
+   "fieldname": "publication_place",
+   "fieldtype": "Select",
+   "label": "N\u01a1i xu\u1ea5t b\u1ea3n",
+   "options": "Vi\u1ec7t Nam\nN\u01b0\u1edbc Ngo\u00e0i"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Ng\u00e0y xu\u1ea5t b\u1ea3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "T\u00e0i li\u1ec7u \u0111\u00ednh k\u00e8m",
+   "options": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-29 23:36:26.938648",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Scientific Publication",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

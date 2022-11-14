@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-11 21:46:10.901710",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "description",
+  "anouncement_date",
+  "authors",
+  "attachments",
+  "partners",
+  "scope",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ch\u1ee7 \u0111\u1ec1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "anouncement_date",
+   "fieldtype": "Date",
+   "label": "Th\u1eddi gian c\u00f4ng b\u1ed1"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "C\u00e1c t\u00e1c gi\u1ea3",
+   "options": "Contributor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "T\u1ec7p \u0111\u00ednh k\u00e8m",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "partners",
+   "fieldtype": "Text",
+   "label": "C\u00e1c \u0111\u1ed1i t\u00e1c"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Data",
+   "label": "Ph\u1ea1m vi"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Scientific Product",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-29 23:39:08.036077",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Scientific Product",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

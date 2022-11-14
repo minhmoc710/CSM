@@ -1,0 +1,23 @@
+{
+ "creation": "2022-10-30 00:04:30.115974",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Gi\u1ea3ng vi\u00ean",
+ "modified": "2022-10-30 00:04:30.115974",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Gi\u1ea3ng vi\u00ean",
+ "owner": "Administrator",
+ "report_field": "total",
+ "report_function": "Sum",
+ "report_name": "Danh s\u00e1ch gi\u1ea3ng vi\u00ean",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

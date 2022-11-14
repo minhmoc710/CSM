@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2022-10-05 12:42:55.105611",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "student",
+  "advisor",
+  "main_critic",
+  "description",
+  "semester",
+  "defense_time",
+  "major",
+  "specialization",
+  "attachments",
+  "committee",
+  "score",
+  "is_finished"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ch\u1ee7 \u0111\u1ec1",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u01b0\u1eddi l\u00e0m kh\u00f3a lu\u1eadn",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "advisor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u01b0\u1eddi h\u01b0\u1edbng d\u1eabn",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "defense_time",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Th\u1eddi gian b\u1ea3o v\u1ec7",
+   "reqd": 1
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Link",
+   "label": "Ng\u00e0nh",
+   "options": "Major"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Chuy\u00ean ng\u00e0nh",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "T\u1ec7p \u0111\u00ednh k\u00e8m",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Link",
+   "label": "H\u1ed9i \u0111\u1ed3ng",
+   "options": "Thesis Committee"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_finished",
+   "fieldtype": "Check",
+   "label": "\u0110\u00e3 ho\u00e0n th\u00e0nh"
+  },
+  {
+   "fieldname": "main_critic",
+   "fieldtype": "Link",
+   "label": "Ng\u01b0\u1eddi ph\u1ea3n bi\u1ec3n ch\u00ednh",
+   "options": "User"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "label": "K\u00ec h\u1ecdc",
+   "options": "Semester",
+   "reqd": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "label": "K\u1ebft qu\u1ea3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-07 23:33:50.851245",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Thesis",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

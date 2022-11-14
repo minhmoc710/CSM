@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-11 23:49:06.564656",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "receive_date",
+  "recepient_type",
+  "individual",
+  "collective",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receive_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Ng\u00e0y nh\u1eadn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recepient_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "C\u00e1 nh\u00e2n/T\u1eadp th\u1ec3?",
+   "options": "C\u00e1 nh\u00e2n\nT\u1eadp th\u1ec3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "individual",
+   "fieldtype": "Link",
+   "label": "C\u00e1 nh\u00e2n",
+   "options": "User"
+  },
+  {
+   "fieldname": "collective",
+   "fieldtype": "Link",
+   "label": "T\u1eadp th\u1ec3",
+   "options": "Collective"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Award",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-10 00:02:35.189274",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Award",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

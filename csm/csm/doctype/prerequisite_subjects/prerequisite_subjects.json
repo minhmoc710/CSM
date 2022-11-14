@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-10-23 14:36:07.115492",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "is_mandatory",
+  "min_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "M\u00f4n h\u1ecdc",
+   "options": "Subject",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_mandatory",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "B\u1eaft bu\u1ed9c",
+   "reqd": 1
+  },
+  {
+   "fieldname": "min_score",
+   "fieldtype": "Float",
+   "label": "\u0110i\u1ec3m t\u1ed1i thi\u1ec3u \u0111\u1ec3 qua m\u00f4n"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-23 14:36:07.115492",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Prerequisite Subjects",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

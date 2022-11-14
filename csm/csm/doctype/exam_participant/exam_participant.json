@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-10-29 22:57:03.990150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "participant",
+  "participant_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ng\u01b0\u1eddi tham gia thi",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "participant_id",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 b\u00e1o danh",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-29 22:58:49.578579",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Exam Participant",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

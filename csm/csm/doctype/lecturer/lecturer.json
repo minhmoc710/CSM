@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name} - {user_id}",
+ "creation": "2022-11-01 00:33:00.021078",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_info",
+  "user_id",
+  "full_name",
+  "education_section",
+  "join_date",
+  "academic_history",
+  "language_certification",
+  "scientific_publications",
+  "scientific_products",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_info",
+   "fieldtype": "Section Break",
+   "label": "Th\u00f4ng tin c\u00e1 nh\u00e2n"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "H\u1ecd v\u00e0 t\u00ean",
+   "reqd": 1
+  },
+  {
+   "description": "\u1ea4n v\u00e0o \u0111\u1ec3 thay \u0111\u1ed5i th\u00f4ng tin c\u00e1 nh\u00e2n",
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "T\u00ean ng\u01b0\u1eddi d\u00f9ng",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "H\u1ecdc v\u1ea5n"
+  },
+  {
+   "fieldname": "academic_history",
+   "fieldtype": "Table",
+   "label": "Qu\u00e1 tr\u00ecnh h\u1ecdc t\u1eadp",
+   "options": "Academic History"
+  },
+  {
+   "fieldname": "language_certification",
+   "fieldtype": "Table",
+   "label": "Tr\u00ecnh \u0111\u1ed9 ngo\u1ea1i ng\u1eef",
+   "options": "Language Certification"
+  },
+  {
+   "fieldname": "scientific_publications",
+   "fieldtype": "Table",
+   "label": "C\u00f4ng b\u1ed1 khoa h\u1ecdc",
+   "options": "User Scientific Publications"
+  },
+  {
+   "fieldname": "scientific_products",
+   "fieldtype": "Table",
+   "label": "S\u1ea3n ph\u1ea9m khoa h\u1ecdc",
+   "options": "User Scientific Products"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lecturer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y tham gia"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-10 22:51:41.068694",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Lecturer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-10-28 16:24:37.427162",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-10-28 16:24:37.427162",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Thesis",
+ "report_name": "Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gi\u1ea3ng vi\u00ean"
+  }
+ ]
+}
