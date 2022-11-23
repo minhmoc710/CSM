@@ -51,7 +51,7 @@ def get_exams(filters):
 
 	return frappe.db.sql(f"""
 		SELECT er.room_id, e.subject_class, sc.subject, er.start_time, er.end_time, s.subject_title
-		FROM `tabExam Room` er
+		FROM `tabExam Shift` er
 		JOIN `tabExam Invigilator` ei ON ei.parent = er.name
 		JOIN `tabExam` e ON e.name = er.exam
 		JOIN `tabSubject Class` sc ON e.subject_class = sc.name

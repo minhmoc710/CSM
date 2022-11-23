@@ -10,7 +10,7 @@
   "title",
   "student",
   "advisor",
-  "main_critic",
+  "critics",
   "description",
   "semester",
   "defense_time",
@@ -19,7 +19,8 @@
   "attachments",
   "committee",
   "score",
-  "is_finished"
+  "is_finished",
+  "amended_from"
  ],
  "fields": [
   {
@@ -43,7 +44,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Ng\u01b0\u1eddi h\u01b0\u1edbng d\u1eabn",
-   "options": "User",
+   "options": "Lecturer",
    "reqd": 1
   },
   {
@@ -89,12 +90,6 @@
    "label": "\u0110\u00e3 ho\u00e0n th\u00e0nh"
   },
   {
-   "fieldname": "main_critic",
-   "fieldtype": "Link",
-   "label": "Ng\u01b0\u1eddi ph\u1ea3n bi\u1ec3n ch\u00ednh",
-   "options": "User"
-  },
-  {
    "fieldname": "semester",
    "fieldtype": "Link",
    "label": "K\u00ec h\u1ecdc",
@@ -105,11 +100,27 @@
    "fieldname": "score",
    "fieldtype": "Float",
    "label": "K\u1ebft qu\u1ea3"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Thesis",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "critics",
+   "fieldtype": "Table",
+   "label": "C\u00e1n b\u1ed9 ph\u1ea3n bi\u1ec7n",
+   "options": "Thesis Critics"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-11-07 23:33:50.851245",
+ "modified": "2022-11-22 21:46:28.910602",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Thesis",
@@ -135,7 +146,9 @@
    "read": 1,
    "report": 1,
    "role": "Gi\u1ea3ng vi\u00ean",
-   "share": 1
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",

@@ -1,29 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:subject",
+ "autoname": "field:title",
  "creation": "2022-11-07 23:04:46.101436",
  "description": "\u0110\u1ec1 t\u00e0i nghi\u00ean c\u1ee9u khoa h\u1ecdc",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "subject",
+  "title",
   "authors",
   "description",
   "attachments",
   "start_time",
-  "end_time"
+  "end_time",
+  "partners"
  ],
  "fields": [
-  {
-   "fieldname": "subject",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "T\u00ean \u0111\u1ec1 t\u00e0i",
-   "reqd": 1,
-   "unique": 1
-  },
   {
    "fieldname": "authors",
    "fieldtype": "Table",
@@ -51,11 +44,25 @@
    "fieldname": "end_time",
    "fieldtype": "Datetime",
    "label": "Th\u1eddi gian k\u1ebft th\u00fac"
+  },
+  {
+   "fieldname": "partners",
+   "fieldtype": "Table",
+   "label": "T\u1ed5 ch\u1ee9c/doanh nghi\u1ec7p h\u1ee3p t\u00e1c",
+   "options": "Collaborate Organizations"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean \u0111\u1ec1 t\u00e0i",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-09 22:47:34.135856",
+ "modified": "2022-11-22 23:56:58.883413",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Scientific Research Subject",

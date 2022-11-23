@@ -22,41 +22,48 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "T\u00ean l\u1edbp h\u1ecdc",
+   "permlevel": 1,
    "reqd": 1
   },
   {
    "fieldname": "subject",
    "fieldtype": "Link",
    "label": "M\u00f4n h\u1ecdc",
-   "options": "Subject"
+   "options": "Subject",
+   "permlevel": 1
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Ng\u00e0y b\u1eaft \u0111\u1ea7u"
+   "label": "Ng\u00e0y b\u1eaft \u0111\u1ea7u",
+   "permlevel": 1
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "Ng\u00e0y k\u1ebft th\u00fac"
+   "label": "Ng\u00e0y k\u1ebft th\u00fac",
+   "permlevel": 1
   },
   {
    "fieldname": "semester",
    "fieldtype": "Link",
    "label": "K\u00ec h\u1ecdc",
-   "options": "Semester"
+   "options": "Semester",
+   "permlevel": 1
   },
   {
    "fieldname": "class_participant",
    "fieldtype": "Table",
    "label": "Ng\u01b0\u1eddi tham gia",
-   "options": "Class Participant"
+   "options": "Class Participant",
+   "permlevel": 1
   },
   {
    "fieldname": "class_code",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "M\u00e3 l\u1edbp",
+   "permlevel": 1,
    "reqd": 1,
    "unique": 1
   },
@@ -69,7 +76,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-29 23:34:50.493544",
+ "modified": "2022-11-15 23:11:56.808649",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Subject Class",
@@ -89,12 +96,36 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gi\u1ea3ng vi\u00ean",
+   "share": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
    "share": 1,
    "write": 1
   }

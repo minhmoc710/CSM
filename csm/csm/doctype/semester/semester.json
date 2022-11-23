@@ -9,7 +9,8 @@
  "field_order": [
   "semester_code",
   "start_date",
-  "end_date"
+  "end_date",
+  "academic_year"
  ],
  "fields": [
   {
@@ -30,11 +31,17 @@
    "label": "M\u00e3 k\u00ec h\u1ecdc",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "N\u0103m h\u1ecdc",
+   "options": "Academic Year"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-07 23:25:30.853196",
+ "modified": "2022-11-23 01:05:38.663292",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Semester",

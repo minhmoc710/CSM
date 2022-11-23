@@ -1,0 +1,72 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Gi\u1ea3ng d\u1ea1y</b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>K\u00ec thi v\u00e0 ca coi thi</b></span>\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch l\u1edbp m\u00f4n h\u1ecdc\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"L\u1ecbch coi thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch c\u1ea5m thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sinh vi\u00ean h\u01b0\u1edbng d\u1eabn KLTN\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch mi\u1ec5n thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"spacer\",\"data\":{\"col\":9}}]",
+ "creation": "2022-11-15 20:31:37.220151",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "retail",
+ "idx": 0,
+ "label": "Trang ch\u1ee7",
+ "links": [],
+ "modified": "2022-11-23 21:06:13.063050",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Trang ch\u1ee7",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Gi\u1ea3ng vi\u00ean"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "L\u1ecbch coi thi",
+   "link_to": "L\u1ecbch coi thi",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p",
+   "link_to": "Thesis",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Danh s\u00e1ch l\u1edbp m\u00f4n h\u1ecdc",
+   "link_to": "Danh s\u00e1ch l\u1edbp",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sinh vi\u00ean h\u01b0\u1edbng d\u1eabn KLTN",
+   "link_to": "Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Danh s\u00e1ch c\u1ea5m thi",
+   "link_to": "Exam Ban List",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Danh s\u00e1ch mi\u1ec5n thi",
+   "link_to": "Exam Exempt List",
+   "type": "DocType"
+  }
+ ],
+ "title": "Trang ch\u1ee7"
+}

@@ -14,5 +14,13 @@ frappe.query_reports["Đề tài nghiên cứu khoa học"] = {
 			"label": "Thời gian kết thúc",
 			"fieldtype": "Date"
 		},
-	]
+	],
+	onload: function(report) {
+	    report.page.add_inner_button(("Xóa bộ lọc"), function() {
+			console.log(report);
+			report.set_filter_value('from', []);
+			report.set_filter_value('to', []);
+			report.refresh();
+		});
+	}
 };

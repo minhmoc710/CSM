@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestExamRoom(FrappeTestCase):
+class TestExamShift(FrappeTestCase):
 	pass

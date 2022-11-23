@@ -1,29 +1,31 @@
 {
  "actions": [],
- "allow_rename": 1,
- "creation": "2022-10-03 23:03:33.932104",
+ "autoname": "autoincrement",
+ "creation": "2022-11-22 23:49:13.231087",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "file"
+  "organization"
  ],
  "fields": [
   {
-   "fieldname": "file",
-   "fieldtype": "Attach",
+   "fieldname": "organization",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "T\u1ec7p",
-   "permlevel": 1
+   "label": "Doanh nghi\u1ec7p h\u1ee3p t\u00e1c",
+   "options": "Organization",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-11-15 22:49:48.294909",
+ "modified": "2022-11-22 23:49:13.231087",
  "modified_by": "Administrator",
  "module": "CSM",
- "name": "Attachment",
+ "name": "Collaborate Organizations",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

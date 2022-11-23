@@ -25,21 +25,16 @@ frappe.query_reports["Danh sách cán bộ giảng dạy"] = {
 		    "label": "Học hàm",
 		    "fieldtype": "Select",
 		    "options": "Không\nPhó giáo sư\nGiáo sư"
-		},
-		{
-		    "fieldname": "remove_filters",
-		    "label": "Xóa bộ lọc",
-		    "fieldtype": "Button",
-		    onchange: (query_report) => { console.log('please work!'); frappe.msgprint("test")}
 		}
 	],
 	onload: function(report) {
 	    report.page.add_inner_button(("Xóa bộ lọc"), function() {
 			console.log(report);
-			report.set_filter_value('academic_rank', []),
-			report.set_filter_value('degree', []),
+			report.set_filter_value('academic_rank', []);
+			report.set_filter_value('degree', []);
+			report.set_filter_value('from', "");
+			report.set_filter_value('to', "");
 			report.refresh();
 		});
-
 	}
 };

@@ -10,5 +10,12 @@ frappe.query_reports["Danh sách hội đồng phản biện"] = {
 			"fieldtype": "Link",
 			"options": "Semester"
 		},
-	]
+	],
+	onload: function(report) {
+	    report.page.add_inner_button(("Xóa bộ lọc"), function() {
+			console.log(report);
+			report.set_filter_value('semester', []);
+			report.refresh();
+		});
+	}
 };

@@ -116,13 +116,13 @@ def get_time_table_list(filters=None):
 	if None not in (filters.get('from'), filters.get('to')):
 		from_time = filters.get('from')
 		to_time = filters.get('to')
-		from_to = f" AND srs.creation BETWEEN '{from_time}' AND '{to_time}' "
+		from_to = f" AND l.creation BETWEEN '{from_time}' AND '{to_time}' "
 	elif filters.get('from') is None and filters.get('to') is not None:
 		to_time = filters.get('to')
-		from_to = f" AND srs.creation BETWEEN '1970-01-01' AND '{to_time}' "
+		from_to = f" AND l.creation BETWEEN '1970-01-01' AND '{to_time}' "
 	elif filters.get('from') is not None and filters.get('to') is None:
 		from_time = filters.get('from')
-		from_to = f" AND srs.creation BETWEEN '{from_time}' AND '{frappe.utils.nowdate()}' "
+		from_to = f" AND l.creation BETWEEN '{from_time}' AND '{frappe.utils.nowdate()}' "
 	else:
 		from_to = ""
 

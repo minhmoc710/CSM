@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student_id",
+ "creation": "2022-11-23 01:09:09.696617",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "full_name",
+  "phone",
+  "email",
+  "address",
+  "specialization",
+  "major"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M\u00e3 SV",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "H\u1ecd v\u00e0 t\u00ean",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Ng\u00e0nh",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Link",
+   "label": "Khoa",
+   "options": "Major"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-23 21:04:38.280285",
+ "modified_by": "Administrator",
+ "module": "CSM",
+ "name": "Student",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

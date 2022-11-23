@@ -16,5 +16,13 @@ frappe.query_reports["Thời khóa biểu"] = {
 			"fieldtype": "Link",
 			"options": "Subject"
 		},
-	]
+	],
+	onload: function(report) {
+	    report.page.add_inner_button(("Xóa bộ lọc"), function() {
+			console.log(report);
+			report.set_filter_value('semester', []);
+			report.set_filter_value('subject_code', []);
+			report.refresh();
+		});
+	}
 };
