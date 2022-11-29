@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Gi\u1ea3ng d\u1ea1y</b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>K\u00ec thi v\u00e0 ca coi thi</b></span>\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch l\u1edbp m\u00f4n h\u1ecdc\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"L\u1ecbch coi thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch c\u1ea5m thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sinh vi\u00ean h\u01b0\u1edbng d\u1eabn KLTN\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch mi\u1ec5n thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"spacer\",\"data\":{\"col\":9}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Gi\u1ea3ng d\u1ea1y</b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>K\u00ec thi v\u00e0 ca coi thi</b></span>\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch l\u1edbp m\u00f4n h\u1ecdc\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"L\u1ecbch coi thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kh\u00f3a lu\u1eadn t\u1ed1t nghi\u1ec7p\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch c\u1ea5m thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sinh vi\u00ean h\u01b0\u1edbng d\u1eabn KLTN\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch mi\u1ec5n thi\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Th\u1eddi kh\u00f3a bi\u1ec3u\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Danh s\u00e1ch vi ph\u1ea1m\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":9}}]",
  "creation": "2022-11-15 20:31:37.220151",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -10,7 +10,7 @@
  "idx": 0,
  "label": "Trang ch\u1ee7",
  "links": [],
- "modified": "2022-11-23 21:06:13.063050",
+ "modified": "2022-11-29 11:42:27.626180",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Trang ch\u1ee7",
@@ -30,6 +30,20 @@
    "doc_view": "List",
    "label": "L\u1ecbch coi thi",
    "link_to": "L\u1ecbch coi thi",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Danh s\u00e1ch vi ph\u1ea1m",
+   "link_to": "Exam Violated List",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Th\u1eddi kh\u00f3a bi\u1ec3u",
+   "link_to": "Th\u1eddi kh\u00f3a bi\u1ec3u",
    "type": "Report"
   },
   {

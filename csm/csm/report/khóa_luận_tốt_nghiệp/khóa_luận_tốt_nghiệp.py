@@ -15,18 +15,18 @@ def execute(filters=None):
 			"options": "Thesis"
 		},
 		{
-			"fieldname": "full_name",
+			"fieldname": "student",
 			"label": "Sinh viên"
 		},
 		{
 			"fieldname": "major",
-			"label": "Ngành",
+			"label": "Khoa",
 			"fieldtype": "Link",
 			"options": "Major"
 		},
 		{
 			"fieldname": "specialization",
-			"label": "Chuyên ngành",
+			"label": "Ngành",
 			"fieldtype": "Link",
 			"options": "Specialization"
 		},
@@ -58,12 +58,18 @@ def get_thesis_list(filters=None):
 	else:
 		semester = ""
 
+	if "System Manager" in frappe.get_roles():
+		user_filter = ""
+	else:
+		user_filter = f" AND tcm.member = '{frappe.session.user}'"
+
 	return frappe.db.sql(f"""
-		SELECT t.title, t.major, t.committee, t.specialization, t.defense_time, u.full_name, t.main_critic
+		SELECT DISTINCT t.title, t.major, t.committee, t.specialization, t.defense_time, t.student
 		FROM `tabThesis` t
-		JOIN `tabUser` u ON u.name = t.student
-		WHERE 
-			advisor = "nguyenvana@gmail.com" AND 
+		JOIN `tabThesis Committee` tc ON t.committee = tc.name
+		JOIN `tabThesis Committee Member` tcm ON tcm.parent = tc.name
+		WHERE  
 			is_finished != 1
+			{user_filter}
 			{semester}
 	""", as_dict=True)

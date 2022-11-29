@@ -1,12 +1,8 @@
 # Copyright (c) 2022, Minh and contributors
 # For license information, please see license.txt
 
-import frappe
+# import frappe
 from frappe.model.document import Document
-from csm.csm.exam_api import get_exempted_students
 
-class ExamBanList(Document):
+class ExamViolatedList(Document):
 	pass
-	# def on_update(self):
-	# 	pass
-

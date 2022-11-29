@@ -56,17 +56,20 @@ def get_class_list(filters=None):
 	else:
 		semester = ""
 
+	if "System Manager" in frappe.get_roles():
+		user_filter = "1 = 1"
+	else:
+		user_filter = f"l.user_id = '{frappe.session.user}'"
+
 	return frappe.db.sql(f"""
 		SELECT
 			sc.name, sc.class_name, sc.class_code, sc.subject, sc.start_date, sc.end_date,
 			s.subject_title, s.credit_num
 		FROM `tabSubject Class` sc
-		JOIN `tabClass Participant` cp ON cp.parent = sc.name
+		JOIN `tabLecturer` l ON sc.lecturer = l.name 
 		JOIN `tabSubject` s ON sc.subject = s.name
 		JOIN `tabSemester` smt ON smt.name = sc.semester
 		WHERE
-		    participant = "nguyenvana@gmail.com" AND
-# 		    participant = "{frappe.session.user}" AND
-		    role = "Giảng viên"
+			{user_filter}
 		    {semester}
 	""", as_dict=True)

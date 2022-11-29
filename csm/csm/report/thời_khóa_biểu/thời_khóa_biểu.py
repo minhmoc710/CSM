@@ -63,16 +63,20 @@ def get_time_table_list(filters=None):
 	else:
 		subject = ""
 
+	if "System Manager" in frappe.get_roles():
+		user_filter = "1 = 1"
+	else:
+		user_filter = f" l.user_id = '{frappe.session.user}'"
+
 	return frappe.db.sql(f"""
 		SELECT tt.subject_class, tt.start_period, tt.end_period, tt.day, tt.room_id, s.subject_title, s.subject_code, sc.semester
 		FROM `tabTime Table` tt
 		JOIN `tabSubject Class` sc ON sc.name = tt.subject_class
-		JOIN `tabClass Participant` cp ON cp.parent = sc.name
+		JOIN `tabLecturer` l ON l.name = sc.lecturer
 		JOIN `tabSubject` s ON s.name = sc.subject
 		JOIN `tabSemester` smt ON smt.name = sc.semester
 		WHERE
-		    cp.participant = "nguyenvana@gmail.com" AND
-		    cp.role = "Giảng viên"
+		    {user_filter}
 		    {semester}
 		    {subject}
 		GROUP BY tt.subject_class

@@ -8,6 +8,12 @@ from csm.csm.utils import get_current_semester
 def execute(filters=None):
 	columns = [
 		{
+			"fieldname": "name",
+			"label": "Ca coi thi",
+			"fieldtype": "Link",
+			"options": "Exam Shift"
+		},
+		{
 			"fieldname": "subject_title",
 			"label": "Tên môn học",
 		},
@@ -49,12 +55,21 @@ def get_exams(filters):
 	else:
 		semester = ""
 
+	if "System Manager" in frappe.get_roles():
+		user_filter = "1 = 1"
+	else:
+		user_filter = f" ei.invigilator = '{frappe.session.user}'"
+
 	return frappe.db.sql(f"""
-		SELECT er.room_id, e.subject_class, sc.subject, er.start_time, er.end_time, s.subject_title
+		SELECT 
+			er.name, er.room_id, e.subject_class, sc.subject, er.start_time, er.end_time, s.subject_title
 		FROM `tabExam Shift` er
 		JOIN `tabExam Invigilator` ei ON ei.parent = er.name
 		JOIN `tabExam` e ON e.name = er.exam
 		JOIN `tabSubject Class` sc ON e.subject_class = sc.name
 		JOIN `tabSubject` s ON s.name = sc.subject
-		WHERE ei.invigilator = "nguyenvana@gmail.com" {semester}
+		WHERE
+			{user_filter}
+			{semester}
+		GROUP BY er.room_id
 	""", as_dict=True)

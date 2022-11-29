@@ -1,8 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{exam}-exempt",
- "creation": "2022-11-23 01:31:06.172126",
+ "autoname": "format:{exam}-violated",
+ "creation": "2022-11-28 23:24:32.180210",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,11 +15,8 @@
   {
    "fieldname": "exam",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "K\u00ec thi",
-   "options": "Exam",
-   "reqd": 1,
-   "unique": 1
+   "options": "Exam"
   },
   {
    "fieldname": "students",
@@ -30,10 +27,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-29 00:26:10.615071",
+ "modified": "2022-11-29 00:24:58.381345",
  "modified_by": "Administrator",
  "module": "CSM",
- "name": "Exam Exempt List",
+ "name": "Exam Violated List",
  "naming_rule": "By script",
  "owner": "Administrator",
  "permissions": [
@@ -46,18 +43,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Gi\u1ea3ng vi\u00ean",
    "share": 1,
    "write": 1
   }

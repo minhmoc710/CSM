@@ -13,6 +13,7 @@
   "start_date",
   "end_date",
   "semester",
+  "lecturer",
   "class_participant",
   "references"
  ],
@@ -55,7 +56,7 @@
    "fieldname": "class_participant",
    "fieldtype": "Table",
    "label": "Ng\u01b0\u1eddi tham gia",
-   "options": "Class Participant",
+   "options": "Students List",
    "permlevel": 1
   },
   {
@@ -72,11 +73,17 @@
    "fieldtype": "Table",
    "label": "T\u00e0i li\u1ec7u tham kh\u1ea3o",
    "options": "Attachment"
+  },
+  {
+   "fieldname": "lecturer",
+   "fieldtype": "Link",
+   "label": "Gi\u1ea3ng vi\u00ean",
+   "options": "Lecturer"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-15 23:11:56.808649",
+ "modified": "2022-11-29 09:38:41.327721",
  "modified_by": "Administrator",
  "module": "CSM",
  "name": "Subject Class",

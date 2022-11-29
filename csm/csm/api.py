@@ -20,8 +20,8 @@ def set_user_permission_for_doc(user_ids: list, allow: str, for_value: str):
     for user_id in user_ids:
         user_permission_doc = frappe.get_doc({
             "doctype": "User Permission",
-            "user": user_id,
             "allow": allow,
+            "user": user_id,
             "for_value": for_value
         })
         user_permission_doc.insert(ignore_permissions=True)

@@ -39,7 +39,52 @@ def execute(filters=None):
 			"fieldtype": "Int"
 		}
 	]
-	return columns, get_time_table_list(filters), get_message(filters)
+
+	message = [
+		"Báo cáo về cán bộ giảng dạy:"
+	]
+	lecturer_list = get_lecturers_data(filters)
+	chart = get_chart(lecturer_list)
+	report_summary = [
+		{"label": "Giảng viên", "value": get_total_lecturers(lecturer_list), 'indicator': 'Red'},
+		{"label": "Công bố khoa học", "value": get_total_scientific_publication(lecturer_list), 'indicator': 'Blue'},
+		{"label": "Sản phẩm khoa học", "value": get_total_scientific_product(lecturer_list), 'indicator': 'Green'},
+	]
+	return columns, lecturer_list, message, chart, report_summary
+
+
+def get_chart(data):
+	degrees = ['Không', 'Cử nhân', 'Thạc sĩ', 'Tiến sĩ', 'Tiến sĩ khoa học']
+	values = []
+	for degree in degrees:
+		values.append(len(list(filter(lambda x: x["highest_degree"] == degree, data))))
+	return {'data': {'labels': degrees, 'datasets': [{'values': values}]}, 'type': 'pie'}
+
+
+def get_total_lecturers(data):
+	return len(data)
+
+
+def get_total_scientific_publication(data):
+	publications = []
+	for lecturer in data:
+		publications += [item['scientific_publication'] for item in frappe.db.sql(f"""
+			SELECT usp.scientific_publication
+			FROM `tabUser Scientific Publications` usp
+			WHERE parent = "{lecturer['name']}"
+		""", as_dict=True)]
+	return len(set(publications))
+
+
+def get_total_scientific_product(data):
+	products = []
+	for lecturer in data:
+		products += [item['scientific_product'] for item in frappe.db.sql(f"""
+			SELECT usp.scientific_product
+			FROM `tabUser Scientific Products` usp
+			WHERE parent = "{lecturer['name']}"
+		""", as_dict=True)]
+	return len(set(products))
 
 
 def get_highest_academic_rank(lecturer_id):
@@ -112,7 +157,7 @@ def get_number_of_scientific_products(lecturer_id):
 		return 0
 
 
-def get_time_table_list(filters=None):
+def get_lecturers_data(filters=None):
 	if None not in (filters.get('from'), filters.get('to')):
 		from_time = filters.get('from')
 		to_time = filters.get('to')
@@ -129,7 +174,6 @@ def get_time_table_list(filters=None):
 	lecturer_list = frappe.db.sql(f"""
 		SELECT l.name, l.full_name, l.join_date
 		FROM `tabLecturer` l
-		JOIN `tabUser Scientific Publications` usp ON usp.parent = l.name
 		JOIN `tabUser` u ON l.user_id = u.name
 		WHERE
 			1 = 1
@@ -152,12 +196,3 @@ def get_time_table_list(filters=None):
 
 		result.append(lecturer)
 	return result
-
-
-def get_message(filters=None):
-	semester = filters.semester or get_current_semester()
-
-	user_full_name = frappe.db.get_value("User", frappe.session.user, "full_name")
-	if semester:
-		return f"Thời khóa biểu cho {user_full_name} trong học kì {semester}:"
-	return f"Thời khóa biểu cho {user_full_name}:"
